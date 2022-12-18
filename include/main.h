@@ -1,8 +1,8 @@
 /*
  * @Author: rx-ted
- * @Date: 2022-12-15 18:59:11
+ * @Date: 2022-12-15 18:56:37
  * @LastEditors: rx-ted
- * @LastEditTime: 2022-12-15 19:15:48
+ * @LastEditTime: 2022-12-16 19:05:14
  */
 /*****************************************************************************
  * Copyright (c) 2019, Nations Technologies Inc.
@@ -47,11 +47,33 @@ extern "C" {
 
 #include "n32g4fr.h"
 
-
-
+/*Led1-PB10,Led2-PB15,Led3-PA9,Led4-PA5,Led5-PA6*/
+#define PORT_GROUP1 GPIOB
+#define PORT_GROUP2 GPIOA
+#define LED1_PORT   PORT_GROUP1
+#define LED2_PORT   PORT_GROUP1
+#define LED3_PORT   PORT_GROUP2
+#define LED4_PORT   PORT_GROUP2
+#define LED5_PORT   PORT_GROUP2
+#define LED1_PIN    GPIO_PIN_10
+#define LED2_PIN    GPIO_PIN_5
+#define LED3_PIN    GPIO_PIN_9
+#define LED4_PIN    GPIO_PIN_5
+#define LED5_PIN    GPIO_PIN_6
 
 #ifdef __cplusplus
 }
 #endif
 
 #endif /* __MAIN_H__ */
+/**
+ * @}
+ */
+
+/**
+ * @}
+ */
+
+/**
+ * @}
+ */
